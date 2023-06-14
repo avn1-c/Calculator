@@ -1,0 +1,96 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+/* Styling for the entire HTML document */
+html, body {
+  margin-top: 0px;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(bg3.jpg); /* Background image */
+  background-blend-mode: overlay;
+  background-size: 100% 100%;
+  background-color: rgb(92, 159, 218);
+  background-position: center;
+  overflow: hidden;
+}
+
+/* Styling for calculator buttons */
+.button {
+  width: 66px;
+  padding: 20px;
+  margin: 0 3px;
+  border: 2px solid black;
+  border-radius: 9px;
+  cursor: pointer;
+  color: black;
+}
+
+/* Styling for rows in the calculator */
+.row {
+  margin: 8px 0;
+}
+
+/* Styling for the input field in the calculator */
+.row input {
+  width: 291px;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 0px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+/* Styling for center-aligned text */
+.text-center {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: rgb(102, 13, 157);
+}
+
+/* Styling for horizontally centered elements */
+.mx-auto {
+  margin: auto;
+}
+
+/* Styling for flex containers */
+.flex {
+  display: flex;
+  color: aqua;
+}
+
+/* Styling for flex containers with column direction */
+.flex-col {
+  flex-direction: column;
+}
+
+/* Styling for vertically centered elements */
+.items-center {
+  align-items: center;
+}
+
+/* Responsive Styles */
+
+/* Media query for screens with a maximum width of 600px */
+@media (max-width: 600px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .row {
+    justify-content: center;
+  }
+
+  .button {
+    width: 30%;
+    margin: 5px;
+  }
+}
+
+/* Media query for screens with a maximum width of 400px */
+@media (max-width: 400px) {
+  .row input {
+    width: 100%;
+  }
+}
